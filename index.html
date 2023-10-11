@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Functional Bank</title>
+</head>
+<body>
+    <header>
+        <h1 class="text-5xl text-center mt-12 font-semibold">Functional <span class="text-amber-800	">Bank</span> !!!</h1>
+    
+        <main>
+            <section>
+
+                <div class="my-12 grid grid-cols-3  gap-3 w-9/12 mx-auto ">
+
+                    <div class="bg-sky-500	text-white font-medium p-8 rounded-md	">
+                        <h2 class="text-4xl font-medium mb-5">Deposite</h2>
+                        <h4 class="text-3xl text-white">$<span id="my-deposite">00</span></h4>
+                    </div>
+
+                    <div class="bg-orange-500	text-white font-medium p-8 rounded-md	">
+                        <h2 class="text-4xl font-medium mb-5">Withdraw</h2>
+                        <h4 class="text-3xl text-white">$<span  id="my-withdraw">00</span></h4>
+                    </div>
+
+                    <div class="bg-yellow-500	text-white font-medium p-8 rounded-md	">
+                        <h2 class="text-4xl font-medium mb-4">Balance</h2>
+                        <h4 class="text-3xl text-white">$<span id="my-balance">500</span></h4>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section>
+                <div class="my-12 grid grid-cols-2  gap-3 w-9/12 mx-auto ">
+                    <div class="bg-amber-400	 font-medium p-5 rounded-md">
+                        <h1 class="text-3xl font-semibold mb-5 text-white">
+                            Enter your Deposite amount
+                        </h1>
+                        <input class=" ml-12 rounded block w-3/4 mb-5 p-2 text-medium " type="number" name="" id="inp-deposite">
+                        <button id="btn-deposite" class=" ml-12  text-1xl font-semibold mb-5 text-white bg-blue-600	p-2 rounded-md hover:bg-red-600" >Deposite</button>
+                    </div>
+
+                    <div class="bg-sky-400	 font-medium p-5 rounded-md">
+                        <h1 class="text-3xl font-semibold mb-5 text-white">
+                            Enter your withdraw amount
+                        </h1>
+                        <input class="ml-12 rounded block w-3/4 mb-5 p-2 text-medium " type="number" name="" id="inp-withdraw">
+                        <button id="btn-withdraw" class="ml-12 text-1xl font-semibold mb-5 text-white bg-red-600	p-2 rounded-md hover:bg-blue-600" >withdraw</button>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+    <script src="./js/utility.js"></script>
+    <script src="./js/deposite.js"></script>
+    <script src="./js/withdraw.js"></script>
+</body>
+</html>
